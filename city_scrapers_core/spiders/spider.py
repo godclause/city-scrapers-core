@@ -4,7 +4,7 @@ from datetime import datetime
 from pytz import timezone
 from scrapy import Spider
 
-from ..constants import CANCELLED, PASSED, TENTATIVE
+from .constants import CANCELLED, PASSED, TENTATIVE
 
 
 class CityScrapersSpider(Spider):
