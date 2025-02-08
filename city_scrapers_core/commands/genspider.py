@@ -34,10 +34,11 @@ class Command(ScrapyCommand):
         if len(args) != 3:
             raise UsageError()
         name, agency, start_url = args[0:3]
-        domain = urlparse(start_url).netloc
+        parsed_url = urlparse(start_url)
+        domain = parsed_url.netloc
         spider_template = "spider.tmpl"
         test_template = "test.tmpl"
-        if "legistar.com" in domain:
+        if domain.endswith(".legistar.com"):
             proto = "https" if start_url.startswith("https") else "http"
             start_url = f"{proto}://{domain}/Calendar.aspx"
             spider_template = "spider_legistar.tmpl"
