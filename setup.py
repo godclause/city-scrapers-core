@@ -18,7 +18,7 @@ setup(
     url="https://github.com/City-Bureau/city-scrapers-core",
     packages=find_packages(),
     package_data={"": ["*"], "city_scrapers_core": ["templates/*"]},
-    install_requires=["jsonschema>=3.0.0a5", "pytz", "requests", "scrapy"],
+    install_requires=["jsonschema>=3.0.0a5", "pytz", "requests", "scrapy", "zope-interface>=5.1.0"],
     tests_require=["flake8", "pytest", "isort"],
     extras_require={
         "aws": ["boto3"],
