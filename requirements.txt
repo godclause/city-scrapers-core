@@ -6,3 +6,4 @@ black==24.3.0
 flake8
 pytest
 isort
+zope-interface>=5.1.0
