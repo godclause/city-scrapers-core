@@ -25,7 +25,7 @@ setup(
         "azure": ["azure-storage-blob>=12"],
         "gcs": ["google-cloud-storage"],
     },
-    python_requires=">=3.6,<4.0",
+    python_requires=">=3.9,<4.0",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
