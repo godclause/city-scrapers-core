@@ -1,7 +1,7 @@
 name: CI
 
-permission:
-  content: read
+permissions:
+  contents: read
 
 on: [push, pull_request]
 
